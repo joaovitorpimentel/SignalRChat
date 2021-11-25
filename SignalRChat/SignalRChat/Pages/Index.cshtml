@@ -1,0 +1,29 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="container">
+    <div id="userinfo" class="row">
+        <label for="username">Por favor, digite seu nome</label>
+        <input type="text" class="form-control" id="username" name="username" autocomplete="off" />
+        <button type="button" class="btn btn-outline-success" onclick="SetUsername();">Enviar</button>
+    </div>
+
+    <div id="messagearea" class="row" style="display: none;">
+        <div>Entrou como : <b><span id="username1">Não Configurado</span></b></div>
+        <hr />
+        <div class="row">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        <hr />
+        <input type="text" id="message" autocomplete="off" />
+        <input type="button" id="sendButton" value="Enviar Menssagem" />
+    </div>
+</div>
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/Chat.js"></script>

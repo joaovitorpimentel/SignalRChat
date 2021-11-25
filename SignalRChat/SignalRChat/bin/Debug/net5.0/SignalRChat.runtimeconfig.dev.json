@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\agaph\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\agaph\\.nuget\\packages",
+      "D:\\Visual Studio Community\\Ferramentas e Componentes\\NuGetPackages"
+    ]
+  }
+}
